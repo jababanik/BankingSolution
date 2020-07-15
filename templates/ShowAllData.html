@@ -1,0 +1,26 @@
+<h1>Customer Details</h1>
+<table>
+    <tr>
+        <th> Account No </th>
+        <th> Customer Name </th>
+        <th> Account Name </th>
+        <th> Amount </th>
+    </tr>
+    <tbody>
+        {% for item in accdetails %}
+    <tr> 
+        <td> {{item.Acc_no}} </td>
+        <td> {{item.Acc_Name}} </td>
+        <td> {{item.Acc_Type}} </td>
+        <td> {{item.Amount}} </td>
+        <td><a href = "{{url_for('SearchData',accno ='')+ item.Acc_no}}" > Search Data </a> </td>
+    {% endfor %}
+
+    </tr>
+    <tr>
+        <td>
+            <a href = "{{ url_for('add')}}">Add Data</a>
+        </td>
+    </tr>
+    </tbody>
+</table>

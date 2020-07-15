@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <form method = "POST" action ="./add">
+        <table>
+            <tr>
+                <td>
+                    Account No
+                </td>
+                <td>
+                    <input type = "text" name = "Acc_no"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Account Holder Name
+                </td>
+                <td> <input type = "text" name = "AccName"> </td>
+            </tr>
+            <tr>
+                <td>
+                    Transaction Type
+                </td>
+                <td>
+                    <input type = "text" name = "TranType">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amount
+                </td>
+                <td>
+                    <input type = "text" name = "Amount">
+                </td>
+            </tr>
+            <tr colspan = "2">
+                <td>
+                    <a href = "{{ url_for ('ShowAllData')}}">Show All Data</a>
+                    <input type = "submit" value = "Add">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>

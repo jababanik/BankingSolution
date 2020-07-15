@@ -1,0 +1,20 @@
+<h1>Customer Details</h1>
+<table>
+    <tr>
+        <th> Account No </th>
+        <th> Customer Name </th>
+        <th> Account Name </th>
+        <th> Amount </th>
+    </tr>
+    <tbody>
+        
+    <tr> 
+        <td> {{accdetail.Acc_no}} </td>
+        <td> {{accdetail.Acc_Name}} </td>
+        <td> {{accdetail.Acc_Type}} </td>
+        <td> {{accdetail.Amount}} </td>
+        <td> <a href = "{{ url_for ('updateData', accno = '') + accdetail.Acc_no}}"> Update Data</a></td>
+        <td> <a href = "{{ url_for ('DeleteData', accno = '') +accdetail.Acc_no}}"> Delete Data</a></td>
+    </tr>
+    </tbody>
+</table>
